@@ -1,0 +1,38 @@
+UVM_INFO @ 0: reporter [RNTST] Running test pcie_dll_test...
+UVM_INFO /apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-1.2/src/base/uvm_objection.svh(1276) @ 207475000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO testbench.sv(265) @ 207475000: uvm_test_top.env.agent.mon [MON] LINK: 11081 beats | injected: 772 corrupted, 639 dropped | DLLPs: 6517 ACK, 718 NAK | replays: 718 by NAK, 125 by timeout
+UVM_INFO testbench.sv(480) @ 207475000: uvm_test_top.env.cov [COV] FUNCTIONAL COVERAGE (overall)      = 96.48 %
+UVM_INFO testbench.sv(481) @ 207475000: uvm_test_top.env.cov [COV]   TLP group  (cg_tlp)               = 100.00 %
+UVM_INFO testbench.sv(482) @ 207475000: uvm_test_top.env.cov [COV]   link group (cg_link)              = 92.97 %
+UVM_INFO testbench.sv(483) @ 207475000: uvm_test_top.env.cov [COV]     TLP length                      = 100.00 %
+UVM_INFO testbench.sv(484) @ 207475000: uvm_test_top.env.cov [COV]     link beat length                = 100.00 %
+UVM_INFO testbench.sv(485) @ 207475000: uvm_test_top.env.cov [COV]     link beat outcome               = 100.00 %
+UVM_INFO testbench.sv(486) @ 207475000: uvm_test_top.env.cov [COV]     cross: length x outcome         = 43.75 %
+UVM_INFO testbench.sv(487) @ 207475000: uvm_test_top.env.cov [COV]     DLLP type (ACK/NAK)             = 100.00 %
+UVM_INFO testbench.sv(488) @ 207475000: uvm_test_top.env.cov [COV]     replay cause (NAK/timeout)      = 100.00 %
+UVM_INFO testbench.sv(489) @ 207475000: uvm_test_top.env.cov [COV]     sequence number range / wrap    = 100.00 %
+UVM_INFO testbench.sv(490) @ 207475000: uvm_test_top.env.cov [COV]     replay buffer occupancy         = 100.00 %
+UVM_INFO testbench.sv(491) @ 207475000: uvm_test_top.env.cov [COV]     sender stalled (buffer full)    = 100.00 %
+UVM_INFO testbench.sv(353) @ 207475000: uvm_test_top.env.scb [SCB] PASS: 6517 TLPs accepted, 6517 delivered in order, exactly once, 0 mismatches
+UVM_INFO /apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-1.2/src/base/uvm_report_server.svh(904) @ 207475000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+** Report counts by severity
+UVM_INFO :   17
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]    12
+[MON]     1
+[RNTST]     1
+[SCB]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+$finish called from file "/apps/vcsmx/vcs/X-2025.06-SP1//etc/uvm-1.2/src/base/uvm_root.svh", line 532.
+$finish at simulation time            207475000
+"design.sv", 511: tb_top.vif.c_nak_returned, 20747 attempts, 718 match
+"design.sv", 513: tb_top.vif.c_replay_by_nak, 20747 attempts, 718 match
+"design.sv", 515: tb_top.vif.c_replay_by_timeout, 20747 attempts, 125 match
+"design.sv", 517: tb_top.vif.c_buffer_full, 20747 attempts, 10730 match
+"design.sv", 519: tb_top.vif.c_sender_stalled, 20747 attempts, 10636 match
+"design.sv", 521: tb_top.vif.c_seq_wraparound, 20747 attempts, 3 match
